@@ -4,13 +4,18 @@ import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import Navbar from './layout/Navbar';
 import Home from './pages/Home';
 import { BrowserRouter as Router, Routes,Route } from 'react-router-dom';
-import AddRestaurant from "./restaurants/AddRestaurant";
+import AddRestaurant from './restaurants/AddRestaurant';
 import EditRestaurant from './restaurants/EditRestaurant';
 import ViewRestaurant from './restaurants/ViewRestaurant';
+import FindAll from './restaurants/FindAll';
+import StarRating from './StarRating';
 
 function App() { 
   return (
     <div className="App">
+      
+      
+    
       <Router>
       <Navbar />
       <Routes>
@@ -18,6 +23,7 @@ function App() {
         <Route exact path="/AddRestaurant" element={<AddRestaurant/>}/>
         <Route exact path="/EditRestaurant/:id" element={<EditRestaurant/>}/>
         <Route exact path="/ViewRestaurant/:id" element={<ViewRestaurant/>}/>
+        <Route exact path="/FindAll" element={<FindAll/>}/>
       </Routes>
       
       </Router>

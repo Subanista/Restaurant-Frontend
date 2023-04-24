@@ -5,8 +5,8 @@ import { Link, useParams } from 'react-router-dom';
 export default function ViewRestaurant() {
 
     const [restaurant, setRestaurant] = useState({
-        name: "",
-        username: "",
+        restaurantName: "",
+        address: "",
         email: "",
       });
 
@@ -48,8 +48,8 @@ export default function ViewRestaurant() {
               </ul>
             </div>
           </div>
-          <Link className="btn btn-primary my-2" to={"/"}>
-            Restaurants
+          <Link className="btn btn-primary my-2" to={"/FindAll"}>
+            All Restaurants
           </Link>
 </div>
 </div>
