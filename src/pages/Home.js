@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios';
 import { Link, useParams } from 'react-router-dom';
+import StarRating from '../StarRating';
 
 
 export default function Home() {
@@ -33,7 +34,11 @@ export default function Home() {
       <th scope="col">Restaurant Name</th>
       <th scope="col">Address</th>
       <th scope="col">Email</th>
+<<<<<<< HEAD
       
+=======
+      <th scope="col">Ratings</th>
+>>>>>>> 352a5f782f352976475aa3850006bf1dfe5d5021
       <th scope="col">Action</th>
     </tr>
   </thead>
@@ -48,7 +53,11 @@ export default function Home() {
                 <td>{restaurant.restaurantName}</td>
                 <td>{restaurant.address}</td>
                 <td>{restaurant.email}</td>
+<<<<<<< HEAD
                 
+=======
+                <td><StarRating/></td>
+>>>>>>> 352a5f782f352976475aa3850006bf1dfe5d5021
                 <td>
                 <Link
                     className="btn btn-primary mx-2"

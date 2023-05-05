@@ -8,7 +8,11 @@ import AddRestaurant from './restaurants/AddRestaurant';
 import EditRestaurant from './restaurants/EditRestaurant';
 import ViewRestaurant from './restaurants/ViewRestaurant';
 import FindAll from './restaurants/FindAll';
+<<<<<<< HEAD
 
+=======
+import StarRating from './StarRating';
+>>>>>>> 352a5f782f352976475aa3850006bf1dfe5d5021
 
 function App() { 
   return (
